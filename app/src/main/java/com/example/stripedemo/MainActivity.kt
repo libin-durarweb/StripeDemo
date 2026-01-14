@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun validateFromServer() {
-        paymentIntentClientSecret = "pi_3SpMLdDNAJIRUKlg1iQjSwOI_secret_n2tk2u9qosPPtmwOnrXfK0HxB"
-        val customerId = "cus_TmwE2wybQprX7x"
-        val ephemeralKeySecret = "ek_test_YWNjdF8xUFZWOVhETkFKSVJVS2xnLFFBMWxqQlB6R1VCUXF4dDZDT3JCaERCVFFnU3pKYXE_00AdmiPCrC"
+        paymentIntentClientSecret = ""
+        val customerId = ""
+        val ephemeralKeySecret = ""
         customerConfig = PaymentSheet.CustomerConfiguration(customerId, ephemeralKeySecret)
-        val publishableKey = "pk_test_51PVV9XDNAJIRUKlguIitC5fGvprT2KNprE91Dh9Gjyz7Ox9GtdrIUnIQyIPPsYFASPWwo4XecpFke13Jr11ZmXLi00I4TiHH7A"
+        val publishableKey = ""
         PaymentConfiguration.init(this, publishableKey)
         presentPaymentSheet()
 
